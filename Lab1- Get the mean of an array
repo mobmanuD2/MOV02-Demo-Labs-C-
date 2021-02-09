@@ -1,0 +1,12 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+  
+int get_average(vector <int> notes){
+  int sum=0;
+  for(auto i:notes)
+    sum+=i;
+  
+  return sum / notes.size();
+}

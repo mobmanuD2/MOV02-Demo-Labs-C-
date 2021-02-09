@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+string get_middle(string input){
+  
+    if ((input.length() % 2) == 0){
+       return input.substr((input.length()/2)-1,2);
+    }
+    else //checks if amount of words is odd
+        {
+           return input.substr((input.length()/2),1);
+        }
+}
